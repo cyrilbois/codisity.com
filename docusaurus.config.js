@@ -70,12 +70,12 @@ const config = {
             position: "left",
             label: "UX/UI",
           },
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "frontendSidebar",
-          //   position: "left",
-          //   label: "Frontend",
-          // },
+          {
+            type: "docSidebar",
+            sidebarId: "frontendSidebar",
+            position: "left",
+            label: "Frontend",
+          },
           // {
           //   type: "docSidebar",
           //   sidebarId: "backendSidebar",
