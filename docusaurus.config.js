@@ -104,11 +104,13 @@ const config = {
             position: "right",
             items: [
               {
-                label: "🇺🇸 English",
+                html: "🇺🇸 English",
+                target: "",
                 href: "https://codisity.com",
               },
               {
-                label: "🇵🇱 Polish",
+                html: "🇵🇱 Polish",
+                target: "",
                 href: "https://codisity.pl",
               },
             ],
