@@ -64,12 +64,12 @@ const config = {
             position: "left",
             label: "Basics",
           },
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "uxuiSidebar",
-          //   position: "left",
-          //   label: "UX/UI",
-          // },
+          {
+            type: "docSidebar",
+            sidebarId: "uxuiSidebar",
+            position: "left",
+            label: "UX/UI",
+          },
           // {
           //   type: "docSidebar",
           //   sidebarId: "frontendSidebar",
