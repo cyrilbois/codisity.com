@@ -104,14 +104,14 @@ const config = {
             position: "right",
             items: [
               {
-                html: "🇺🇸 English",
-                target: "",
-                href: "https://codisity.com",
-              },
-              {
                 html: "🇵🇱 Polish",
                 target: "",
                 href: "https://codisity.pl",
+              },
+              {
+                html: "🇺🇸 English",
+                target: "",
+                href: "https://codisity.com",
               },
             ],
           },
