@@ -82,12 +82,12 @@ const config = {
             position: "left",
             label: "Backend",
           },
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "fullstackSidebar",
-          //   position: "left",
-          //   label: "Full Stack",
-          // },
+          {
+            type: "docSidebar",
+            sidebarId: "fullstackSidebar",
+            position: "left",
+            label: "Full Stack",
+          },
           {
             href: "/youtube",
             position: "right",
