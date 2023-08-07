@@ -76,12 +76,12 @@ const config = {
             position: "left",
             label: "Frontend",
           },
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "backendSidebar",
-          //   position: "left",
-          //   label: "Backend",
-          // },
+          {
+            type: "docSidebar",
+            sidebarId: "backendSidebar",
+            position: "left",
+            label: "Backend",
+          },
           // {
           //   type: "docSidebar",
           //   sidebarId: "fullstackSidebar",
