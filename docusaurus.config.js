@@ -102,7 +102,7 @@ const config = {
           },
           {
             type: "dropdown",
-            label: "Lang",
+            html: `<span aria-label="Language">🇺🇸</span>`,
             position: "right",
             items: [
               {
