@@ -5,6 +5,48 @@ tags:
 
 # Hashing
 
+Hashing is a process of converting data (often referred to as a "message") into a fixed-size string of characters, which is typically a hexadecimal number. This output is known as a hash value or hash code. Hashing is widely used in computer science, cryptography, and data security for various purposes. Here are key aspects to understand about hashing:
+
+**1. Purpose of Hashing:**
+
+- **Data Integrity:** Hashing is used to verify the integrity of data. By generating a hash value for a piece of data (e.g., a file), users can later recompute the hash and compare it to the original hash to check if the data has been modified or corrupted.
+- **Data Retrieval:** Hashing is used in data structures like hash tables to quickly retrieve data. It allows for efficient mapping of keys (e.g., words in a dictionary) to values (e.g., definitions).
+- **Password Storage:** Hashing is employed to store passwords securely. Instead of storing plain-text passwords, systems store the hash of the password. When a user logs in, the system hashes the entered password and compares it to the stored hash.
+- **Cryptographic Security:** Hash functions are used in cryptography to ensure data confidentiality, authentication, and data integrity. Cryptographic hash functions are designed to be secure against various attacks.
+
+**2. Properties of a Good Hash Function:**
+
+- A good hash function should exhibit the following properties:
+  - **Deterministic:** For the same input, it always produces the same hash output.
+  - **Fast to Compute:** It should compute the hash quickly.
+  - **Pre-image Resistance:** Given a hash value, it should be computationally infeasible to reverse the process and find the original input.
+  - **Collision Resistance:** It should be extremely unlikely for two different inputs to produce the same hash output.
+  - **Avalanche Effect:** A small change in the input should result in a significantly different hash value.
+  - **Fixed Output Length:** The hash function should produce a fixed-length hash output, regardless of the input size.
+
+**3. Common Hash Functions:**
+
+- There are various hash functions used for different purposes:
+  - **MD5 (Message Digest Algorithm 5):** Once popular but now considered weak for cryptographic purposes due to vulnerabilities.
+  - **SHA-1 (Secure Hash Algorithm 1):** Also considered weak for cryptographic purposes.
+  - **SHA-256 and SHA-3:** Part of the Secure Hash Algorithm family, these are widely used and considered secure.
+  - **bcrypt and scrypt:** Cryptographic hash functions designed specifically for secure password storage.
+
+**4. Cryptographic Hash Functions:**
+
+- Cryptographic hash functions are specifically designed to resist attacks and are used in security-sensitive applications. They must meet stringent security criteria.
+
+**5. Salt:** When storing passwords, it's common to use a technique called "salting." A unique random value (the salt) is added to each password before hashing. This prevents attackers from using precomputed tables (rainbow tables) to crack multiple passwords at once.
+
+**6. Examples of Hashing Usage:**
+
+- **Checksums:** Files downloaded from the internet often have a checksum associated with them. Users can calculate the checksum of the downloaded file and compare it to the provided checksum to ensure the file is intact.
+- **Digital Signatures:** In public key cryptography, digital signatures are created by hashing a message and then encrypting the hash with the sender's private key. The recipient can verify the signature using the sender's public key.
+- **Data Deduplication:** Hashing is used to identify duplicate data in storage systems, allowing for efficient data deduplication.
+- **Blockchain:** Blockchain technology relies on cryptographic hashing to create a secure and immutable ledger of transactions.
+
+In summary, hashing is a fundamental concept in computer science and data security, providing data integrity verification, efficient data retrieval, and security for various applications. It is essential for protecting data, verifying authenticity, and ensuring the secure storage of sensitive information like passwords.
+
 ## Links
 
 - [Hash table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)

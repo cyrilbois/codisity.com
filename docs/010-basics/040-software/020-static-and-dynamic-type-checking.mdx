@@ -1,5 +1,49 @@
 # Static and dynamic type checking
 
+Static and dynamic type checking are two different approaches to verifying and enforcing data types in programming languages. They are methods used to catch type-related errors and ensure the correctness and reliability of code. Here's an explanation of both:
+
+**1. Static Type Checking:**
+
+Static type checking is a type checking method that is performed at compile time, before the code is executed. It involves analyzing the code without actually running it and verifying that variables and expressions are used in a way that is consistent with their declared types. If any type-related issues are found during this analysis, the compiler reports them as errors, preventing the code from being compiled until these errors are resolved.
+
+Key characteristics of static type checking:
+
+- **Compile-Time Verification:** Errors are caught at compile time, meaning that programmers receive feedback about type-related issues before the program runs.
+- **Strong Typing:** Static typing enforces strict type rules, making sure that variables and expressions are used in a way that is consistent with their declared types.
+- **Examples:** Languages like C, C++, Java, and C# use static type checking.
+
+Example of static type checking in Java:
+
+```java
+int x = 10;
+String y = "Hello";
+int result = x + y; // This will generate a compile-time error because you can't add an int and a String.
+```
+
+Static type checking can help catch many common programming errors early in the development process, which can lead to more robust and reliable code.
+
+**2. Dynamic Type Checking:**
+
+Dynamic type checking, on the other hand, is performed at runtime while the code is being executed. In dynamically typed languages, variables do not have explicit type declarations, and their types can change during the program's execution. Type checks are performed as operations are executed, and if a type-related error is encountered, it results in a runtime error or exception.
+
+Key characteristics of dynamic type checking:
+
+- **Runtime Verification:** Type checks are performed during program execution, and errors are discovered when the problematic code path is reached.
+- **Duck Typing:** In some dynamically typed languages, the focus is on whether an object can respond to a particular message or method call rather than its specific type.
+- **Examples:** Languages like Python, JavaScript, Ruby, and PHP use dynamic type checking.
+
+Example of dynamic type checking in Python:
+
+```python
+x = 10
+y = "Hello"
+result = x + y  # This will raise a TypeError at runtime because you can't add an int and a str.
+```
+
+Dynamic type checking allows for more flexibility but can also lead to runtime errors that may be more challenging to debug, especially in large and complex codebases. However, it can be more concise and expressive in certain scenarios.
+
+In summary, the choice between static and dynamic type checking depends on the programming language and the goals of the software project. Static type checking offers early error detection and type safety but may require more explicit type declarations. Dynamic type checking provides flexibility but may result in runtime errors if type-related issues are not handled properly. Each approach has its advantages and trade-offs, and the choice often comes down to the preferences and requirements of the developers and the specific use case.
+
 ## Links
 
 - [Type system - Wikipedia](https://en.wikipedia.org/wiki/Type_system)
