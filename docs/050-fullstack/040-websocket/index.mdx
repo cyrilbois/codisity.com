@@ -5,6 +5,46 @@ tags:
 
 # WebSocket
 
+WebSocket is a communication protocol that provides full-duplex, bidirectional communication channels over a single, long-lived TCP (Transmission Control Protocol) connection. Unlike the traditional request-response model of HTTP (Hypertext Transfer Protocol), where a client sends a request to a server and waits for a response, WebSocket allows for real-time, low-latency, and continuous communication between a client (typically a web browser) and a server. WebSocket is commonly used for building interactive and dynamic web applications, online games, chat applications, and other real-time applications. Here are key aspects of WebSocket:
+
+**Key Characteristics of WebSocket:**
+
+1. **Full-Duplex Communication:** WebSocket allows both the client and the server to send data to each other simultaneously without waiting for responses. This full-duplex communication enables real-time interactions.
+
+2. **Low Latency:** WebSocket reduces latency compared to traditional HTTP because it eliminates the need for repeated connection setup and teardown for each request-response cycle.
+
+3. **Bidirectional:** Both the client and server can initiate communication. The server can send updates or notifications to the client, and the client can send data or requests to the server without waiting for an explicit response.
+
+4. **Single Connection:** WebSocket establishes a single, persistent connection between the client and server, reducing the overhead associated with multiple HTTP connections.
+
+5. **Efficiency:** WebSocket is efficient in terms of data transfer because it minimizes the overhead of HTTP headers, making it suitable for real-time applications with high data transfer rates.
+
+6. **Cross-Origin Communication:** WebSocket supports cross-origin communication, allowing clients from different domains to establish WebSocket connections with a server, provided that the server explicitly allows such connections using CORS (Cross-Origin Resource Sharing) headers.
+
+**How WebSocket Works:**
+
+1. **Handshake:** WebSocket starts with a handshake process. When a client wants to establish a WebSocket connection, it sends an HTTP request with an "Upgrade" header to the server, indicating its intention to switch to the WebSocket protocol. If the server agrees, it responds with an "Upgrade" header as well, and the connection is upgraded to WebSocket.
+
+2. **WebSocket Protocol:** Once the connection is established, both the client and server can send and receive WebSocket frames. WebSocket frames are packets of data that can be text or binary, and they can be sent in both directions.
+
+3. **Keep-Alive:** WebSocket connections are long-lived and persistent by nature. They remain open until explicitly closed by the client or server. The keep-alive feature ensures that the connection stays active, even if there is no data exchange.
+
+4. **Closing Connection:** When either the client or server decides to close the connection, they can send a WebSocket "close" frame to signal the termination of the connection gracefully.
+
+**Use Cases for WebSocket:**
+
+WebSocket is commonly used in various real-time and interactive applications, including:
+
+- Chat applications
+- Online multiplayer games
+- Collaborative document editing
+- Financial trading platforms
+- Real-time dashboards and monitoring tools
+- Live sports scores and updates
+- Social media feeds and notifications
+
+WebSocket simplifies the development of real-time features in web applications by providing a standardized and efficient way for clients and servers to communicate seamlessly and in real-time. It has become an integral part of modern web development, enabling a wide range of interactive and dynamic web applications.
+
 ## Links
 
 - [WebSocket - Wikipedia](https://en.wikipedia.org/wiki/WebSocket)

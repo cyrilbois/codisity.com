@@ -5,6 +5,31 @@ tags:
 
 # Authentication and authorization
 
+Authentication and authorization are two fundamental concepts in the field of computer security and access control, especially in the context of software applications and systems. While they are related, they serve distinct purposes:
+
+**Authentication:**
+Authentication is the process of verifying the identity of a user, device, or system component trying to access a resource or perform an action. It ensures that the entity claiming a particular identity is indeed who it says it is. Authentication typically relies on one or more of the following factors:
+
+1. **Something You Know:** This factor involves knowledge-based authentication, such as a username and password. The user provides a secret (password) that only they should know.
+
+2. **Something You Have:** This factor involves possession-based authentication, such as a physical smart card, a mobile device, or a security token. The user must possess a physical item to gain access.
+
+3. **Something You Are:** This factor involves biometric authentication, such as fingerprint or facial recognition. It relies on unique physical or behavioral traits of the user, which are difficult to forge.
+
+Authentication methods can vary in complexity and security, and they are often used in combination to create multi-factor authentication (MFA) systems. MFA adds an extra layer of security by requiring users to provide multiple forms of authentication, making it more difficult for unauthorized users to gain access.
+
+**Authorization:**
+Authorization, on the other hand, is the process of determining what actions or resources an authenticated entity is allowed to access or perform. Once a user's identity is authenticated, authorization checks are performed to decide whether the authenticated entity has the necessary permissions to carry out a specific action or access a particular resource.
+
+Authorization is based on a set of rules or policies that define who can do what within an application or system. These policies are often implemented through access control lists (ACLs), role-based access control (RBAC), or attribute-based access control (ABAC). Authorization decisions are made by evaluating the authenticated entity's identity and the permissions associated with that identity.
+
+In summary:
+
+- **Authentication** verifies the identity of a user or entity.
+- **Authorization** determines what actions or resources an authenticated entity is allowed to access.
+
+These two concepts work together to control access to data, services, and functionality within software applications and systems. Properly implemented authentication and authorization mechanisms are crucial for maintaining security and protecting sensitive information.
+
 ## Links
 
 - [Authentication - Wikipedia](https://en.wikipedia.org/wiki/Authentication)

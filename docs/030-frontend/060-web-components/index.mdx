@@ -5,6 +5,32 @@ tags:
 
 # Web components
 
+Web components are a set of web platform APIs and a specification for creating reusable and encapsulated custom HTML elements. They allow web developers to build their own HTML elements with their own encapsulated styling and behavior. Web components consist of several key technologies and concepts:
+
+1. **Custom Elements:** Custom Elements is a JavaScript API that enables developers to define and create their own custom HTML elements. These elements can have names that include hyphens (e.g., `<my-element>`), making them distinct from built-in HTML elements.
+
+2. **Shadow DOM (Document Object Model):** Shadow DOM is a way to encapsulate the internal structure and styling of a web component so that it doesn't interfere with or get affected by the styles and structure of the rest of the web page. It provides scoped CSS and DOM isolation for components.
+
+3. **HTML Templates:** HTML Templates allow developers to declare fragments of markup that are not rendered when the page loads but can be instantiated later using JavaScript. This is useful for defining the structure of a web component's shadow DOM.
+
+4. **HTML Imports (Deprecated):** HTML Imports was a technology for including external HTML documents (containing web components) in other HTML documents. However, it has been deprecated in favor of using JavaScript modules and ES6 imports for component inclusion.
+
+Web components offer several advantages:
+
+- **Reusability:** Web components are highly reusable. Once defined, they can be used in multiple parts of a web application or across different projects.
+
+- **Encapsulation:** The use of Shadow DOM allows for encapsulated styling and behavior, preventing CSS and JavaScript conflicts with other parts of the page.
+
+- **Modularity:** Web components promote modular development, making it easier to manage and maintain code.
+
+- **Consistency:** Custom elements ensure that developers use the same HTML tags and structure consistently throughout an application or website.
+
+- **Interoperability:** Web components can be used with any JavaScript framework or library and can be shared across different technologies.
+
+While web components offer many benefits, they are not a replacement for existing JavaScript frameworks and libraries like React, Angular, or Vue.js. Instead, they can be complementary, allowing developers to create reusable UI elements that can be easily integrated into applications built with these frameworks.
+
+To create web components, developers define custom elements, utilize the Shadow DOM for encapsulation, and often use HTML templates for defining the component's structure. Various JavaScript libraries and frameworks provide tools and abstractions to simplify web component development, making it more accessible to web developers.
+
 ## Links
 
 - [Web Components - Wikipedia](https://en.wikipedia.org/wiki/Web_Components)

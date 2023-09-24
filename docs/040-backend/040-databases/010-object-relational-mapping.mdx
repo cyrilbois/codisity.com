@@ -5,6 +5,34 @@ tags:
 
 # Object-relational mapping
 
+Object-Relational Mapping (ORM) is a programming technique used in software development to bridge the gap between the object-oriented world of programming languages and the relational world of databases. It allows developers to work with databases using programming objects and classes, making it easier to interact with and manipulate data stored in relational databases. Here are key aspects of Object-Relational Mapping:
+
+1. **Object-Oriented Mapping:** ORM systems provide a way to represent database tables and their relationships as object-oriented models in programming languages. In other words, database tables become classes, and rows in those tables become objects of those classes.
+
+2. **Abstraction:** ORM abstracts away the complexities of SQL (Structured Query Language) and the underlying database schema. Developers can use familiar object-oriented constructs such as classes, objects, methods, and inheritance to work with data instead of writing raw SQL queries.
+
+3. **CRUD Operations:** ORM frameworks provide methods and APIs for performing CRUD (Create, Read, Update, Delete) operations on data objects. Developers can manipulate data by creating, retrieving, updating, and deleting objects without writing SQL statements explicitly.
+
+4. **Query Language:** ORM systems often include their own query languages that allow developers to express database queries using a more natural and object-oriented syntax. For example, in a Python ORM like Django's ORM, you can use Python code to query the database.
+
+5. **Schema Generation:** ORM tools can generate database schema from the object-oriented models and vice versa. This means you can define your data models in code, and the ORM will create the corresponding database tables, fields, and relationships.
+
+6. **Cross-Database Compatibility:** Some ORM frameworks support multiple database systems, allowing developers to switch databases (e.g., from MySQL to PostgreSQL) with minimal code changes. This is possible because the ORM handles the underlying SQL differences.
+
+7. **Performance Optimization:** ORM frameworks often include features for optimizing database queries, such as lazy loading (loading related data only when needed), eager loading (loading related data in advance), and query caching to minimize database round trips.
+
+8. **Relationships:** ORM systems support modeling and working with complex relationships between data entities, including one-to-one, one-to-many, and many-to-many relationships. These relationships are often represented as attributes or methods in the object-oriented models.
+
+9. **Validation and Business Logic:** Developers can include data validation rules and business logic in their object-oriented models, ensuring that data integrity is maintained at the application level.
+
+10. **Concurrency Control:** ORM frameworks often provide mechanisms for handling concurrent updates to the same data, preventing conflicts and data corruption.
+
+11. **Migrations:** Many ORM systems offer migration tools to manage database schema changes over time, making it easier to evolve the database schema as application requirements change.
+
+12. **Community and Ecosystem:** ORM frameworks have active communities and extensive ecosystems of plugins, extensions, and documentation to support developers.
+
+Popular ORM frameworks and libraries include Django ORM (Python), Hibernate (Java), Entity Framework (C#), Sequelize (Node.js), and SQLAlchemy (Python). These frameworks abstract the complexities of database interactions and provide developers with high-level, object-oriented interfaces to work with relational databases, significantly improving development productivity and code maintainability.
+
 ## Links
 
 - [Object–relational mapping - Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
